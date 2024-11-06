@@ -1,0 +1,302 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#map { 
+    height: 516px;
+    width: 516px;
+    border: 2px solid black;
+    image-rendering: crisp-edges; /* Improve image quality */
+    image-rendering: pixelated;   /* Fallback for other browsers */
+}
+
+.map_parent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.map_neatline {
+    display: flex;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#map_address {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+#myCityName {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+#myStateName {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+
+#right_bar {
+    border: 3px solid black;
+    width: 32px;
+    margin-left: 20px;
+}
+
+
+#left_bar {
+    border: 3px solid black;
+    width: 32px;
+    margin-right: 20px;
+}
+
+#countryblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myCountryName {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+
+#myCenter_coords {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+  
+.submit_city, .edit_city_div {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.submit_city_button {
+    background-color: #007BFF; /* Blue background */
+    /* border: none; Remove default border */
+    color: white; /* White text */
+    padding: 3px 5px;
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+
+.zoom-level-control {
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+#map_border {
+    border: 2px solid rgba(0,0,0,0.25);
+    padding: 15px;
+
+}
+
+#button_section {
+    /* height: 48px; */
+    box-sizing: border-box;
+    width: inherit;
+    /* border: 2px solid #FF5A5F; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blue-button {
+    background-color: #007BFF; /* Blue background */
+    border: none; /* Remove default border */
+    color: white; /* White text */
+    padding: 3px;
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    height: 30px;
+}
+
+.blue-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.blue-button:active {
+    background-color: #004085; /* Even darker blue on click */
+    transform: translateY(0); /* Reset lift effect on click */
+}
+
+
+.edit_city_lab_div {
+    margin-left: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.state_form_div {
+    margin-top: 15px;
+}
+
+.edit_city_lab, .edit_state_lab {
+    margin-bottom: 0px;
+}
+
+.map_names_edit {
+    border: 3px solid #007BFF;
+    margin-top: 24px;
+    margin-left: 40px;
+    padding: 5px;
+    font-size: 14px;
+    width: 400px;
+    margin-bottom: 60px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+
+#mapNamesEdit input {
+    border-color: #007BFF;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none; /* Remove the default outline if needed */
+    border-radius: 5px;
+}
+
+.refresh_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+}
+.refresh_button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+#refresh_div {
+    width: 30%; 
+}
+
+#refresh_names_box {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#download_group {
+    display: flex;
+    justify-content: space-around;
+    width: 516px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+}
+
+#printout_type, #map_quality, #paper_type {
+    border-color: #007bff;
+    background-color: #007BFF;
+    color: white;
+}
+
+#download_map {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+#page_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* max-width: 1300px; */
+}
+
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+/* #add_info {
+    margin-top: 20px;
+} */
+
+@media (max-width: 1199px) {
+    #how_to_div {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    #how_to_div {
+        display: block;
+    }
+}
+
+#how_to_div {
+    width: 90%;
+    height: 200px;
+    border: 3px solid #007BFF;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#how_to_div h5 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#quality_div {
+    display: none;
+}

@@ -1,0 +1,247 @@
+@media (max-width: 576px) { 
+    /* body {
+        overflow: hidden;
+    } */
+    .map_parent {
+        /* border: 8px solid red; */
+        flex-direction: column;
+        /* width: 100vw; */
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    /* #map_frame {
+        border: 4px solid blue;
+    } */
+
+    #refresh_names_box {
+        /* border: 1px solid blue; */
+        align-self: center;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #map {
+        width: 94vw;
+        height: 94vw;
+        margin: 2vw;
+        min-width: 320px;
+        min-height: 320px;
+        box-sizing: border-box;
+        border-color: black;
+        border-width: 2px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .map_neatline {
+        padding: 0px;
+        /* margin-top: 3vh; */
+        /* box-sizing: border-box; */
+        border: 2px solid black;
+        box-sizing: border-box;
+        /* background-color: blue; */
+        justify-content: center;
+        width: 100%;
+    }
+
+    #map_border {
+        border: 1px solid rgba(0,0,0,0.15);
+        padding: 1vw;
+        box-sizing: border-box;
+        width: 100vw;
+        /* margin: 0 auto; */
+        /* border: 0; */
+    }
+
+    #map_address {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        /* height: 40.57vw; */
+        height: calc(41.4vw - 15px);
+        border: 0;
+        box-sizing:border-box;
+    }
+
+    #myStateName {
+        display: none;
+    }
+    
+    
+    #myCityName {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 36px;
+        text-transform: uppercase;
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        /* margin-top: 10px; */
+    }
+    
+    #myStateName {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        margin-top: -5px;
+        display: none;
+    }
+    
+    
+    #right_bar {
+        border: 2px solid black;
+        width: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    
+    #left_bar {
+        border: 2px solid black;
+        width: 26px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    #countryblock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        /* display: none; */
+    }
+    
+    #myCountryName {
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        /* font-family: "Roboto", sans-serif; */
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+       
+    }
+    
+    
+    #myCenter_coords {
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        word-spacing: 10px;
+    }
+
+    #download_group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #button_section {
+        width: 100vw;
+        /* border: 1px solid black; */
+        padding-top: 10px;
+    }
+    
+    .map_names_edit {
+        width:90vw;
+        margin-left: 0px;
+    }
+
+    #download_group div {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 30px;
+    }
+
+    #printout_type, #map_quality, #paper_type, #download_map {
+        height: 30px;
+        width: 35vw;
+    }
+
+    #download_map {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-weight: bold;
+    }
+
+    .refresh_button {
+        width: 50vw;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #refresh_div {
+        display: flex;
+        align-self: center;
+        width: 50vw;
+    }
+
+    #update_state_name_form {
+        display: none;
+    }
+
+    .edit_city_div {
+        width: 50%;
+    }
+    #edit_city {
+        width: 100%;
+    }
+
+    #myHeader {
+        height: 8vh;
+        border: 4px solid black;
+        font-size: 22px;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 10px;
+        font-family: "Merriweather", serif;
+    }
+
+
+    #headline {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    #head_1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    #add_info {
+        height: 10vh;
+        border: 2px solid black;
+        color: white;
+        background-color: #106177;
+        font-family: 'Raleway', sans-serif;
+        box-sizing: border-box;
+        text-align: center;
+        /* padding-top: 20px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    
+}
+
